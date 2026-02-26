@@ -1,0 +1,38 @@
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 16px 32px; /* py-4 px-8 */
+  display: flex;
+  justify-content: flex-end; /* flex justify-end */
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* gap-1 = 4px */
+}
+
+.logo-block {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px; /* px-2 py-1 */
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 右侧文本样式 */
+.logo-text {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem; /* text-2xl */
+  margin-left: 8px; /* ml-2 */
+}

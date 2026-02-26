@@ -1,0 +1,273 @@
+.upload-card {
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs */
+.tab-header {
+  display: flex;
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.tab-toggle {
+  flex: 1;
+  padding: 16px 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  color: #6b7280;
+}
+
+.tab-toggle.active {
+  background-color: white;
+  color: black;
+}
+
+.tab-toggle:not(.active):hover {
+  color: black;
+}
+
+.upload-body {
+  padding: 48px; /* p-12 */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-pane {
+  width: 100%;
+  max-width: 32rem; /* max-w-lg */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Drop Zone */
+.drop-zone {
+  width: 100%;
+  border: 2px dashed #9ca3af; /* border-gray-400 */
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.drop-zone:hover {
+  background-color: #f9fafb;
+}
+
+.upload-icon-large {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.drop-text-primary {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.drop-text-divider {
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.hidden-input {
+  display: none;
+}
+
+/* Formats Info */
+.formats-info {
+  text-align: center;
+  width: 100%;
+}
+
+.formats-title {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.formats-grid {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.format-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-med {
+  width: 32px;
+  height: 32px;
+}
+
+.format-name {
+  font-weight: bold;
+}
+
+.format-ext {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* URL Input */
+.url-input-section {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.url-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.url-input {
+  width: 100%;
+  border: 1px solid black;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.url-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px black;
+}
+
+/* Queue List */
+.upload-queue-container {
+  width: 100%;
+  max-width: 42rem; /* max-w-2xl */
+  margin-top: 32px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 32px;
+}
+
+.queue-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.queue-list {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 32px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.queue-item {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.queue-item:last-child {
+  border-bottom: none;
+}
+
+.item-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #4b5563;
+}
+
+.item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-size {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0070f3;
+  color: white;
+  font-weight: bold;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0060df;
+}
+
+.btn-secondary {
+  border: 1px solid black;
+  background-color: white;
+  padding: 8px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-large {
+  padding: 12px 32px;
+}
+
+.btn-delete {
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #e5e7eb;
+}
+
+.action-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.icon-trash {
+  width: 20px;
+  height: 20px;
+  color: black;
+}

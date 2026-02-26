@@ -1,0 +1,162 @@
+.app-wrapper {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.upload-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 600px;
+}
+
+.upload-box-wrapper {
+  width: 100%;
+  max-width: 768px;
+  /* max-w-3xl */
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .preview-column {
+    grid-column: span 5;
+  }
+
+  .results-column {
+    grid-column: span 7;
+  }
+}
+
+.main-viewer {
+  border: 1px solid black;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* aspect-square */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 16px;
+}
+
+.viewer-display {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.filename-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-list-section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sidebar-header h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.sidebar-subtext {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.sidebar-content {
+  flex: 1;
+}
+
+.btn-secondary {
+  border: 1px solid black;
+  padding: 8px 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
+
+.floating-help-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #4a4a4a;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+  transition: background-color 0.2s;
+}
+
+.floating-help-btn:hover {
+  background-color: black;
+}
+
+.help-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.video-icon {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
